@@ -57,7 +57,7 @@ string NegativeMessage = "Girilen sayı tektir.";
 Console.WriteLine("Lütfen bir sayı giriniz: ");
 Number = int.Parse(Console.ReadLine());
 
-if(Number > Limit)
+if (Number > Limit)
 {
     Console.WriteLine("Girilen sayı 10'dan büyüktür.");
     if (Number % 2 == 0)
@@ -100,7 +100,88 @@ else if (Number < Limit)
 }
 
 
+// Practice if-else / switch-case
 
+int Choose = 0;
+
+Start:
+Console.WriteLine("Rüya manavına hoş geldiniz, işleminize hangi seçenek ile devam etmek istersiniz ? \n" +
+    "If Else ile devam etmek için 1\n" +
+    "Switch Case ile devam etmek için 2");
+Choose =int.Parse(Console.ReadLine());
+
+if (Choose == 1)
+{
+    goto IfElse;
+}
+
+else if (Choose == 2)
+{
+    goto Switch;
+}
+
+else
+{
+    Console.WriteLine("Lütfen belirtilen değerler haricinde bir rakam girmeyin");
+    goto Start;
+}
+
+
+IfElse:
+Console.WriteLine("Rüya Manavına Hoş Geldiniz!");
+Console.WriteLine("Elma = 2 TL");
+Console.WriteLine("Armut = 3 TL");
+Console.WriteLine("Çilek = 2 TL");
+Console.WriteLine("Muz = 3 TL");
+Console.WriteLine("Diğer bütün meyveler = 4 TL");
+
+Console.Write("Hangi meyveyi satın almak istersiniz? (Elma/Armut/Çilek/Muz/Diğer): ");
+string ChooseIf = Console.ReadLine().ToLower();
+
+if (ChooseIf == "elma")
+    Console.WriteLine("Seçtiğiniz meyvenin fiyatı: 2 TL");
+else if (ChooseIf == "armut")
+    Console.WriteLine("Seçtiğiniz meyvenin fiyatı: 3 TL");
+else if (ChooseIf == "çilek")
+    Console.WriteLine("Seçtiğiniz meyvenin fiyatı: 2 TL");
+else if (ChooseIf == "muz")
+    Console.WriteLine("Seçtiğiniz meyvenin fiyatı: 3 TL");
+else
+    Console.WriteLine("Seçtiğiniz meyvenin fiyatı: 4 TL");
+
+
+Switch:
+Console.WriteLine("Rüya Manavına Hoş Geldiniz!");
+Console.WriteLine("Elma = 2 TL");
+Console.WriteLine("Armut = 3 TL");
+Console.WriteLine("Çilek = 2 TL");
+Console.WriteLine("Muz = 3 TL");
+Console.WriteLine("Diğer bütün meyveler = 4 TL");
+
+Console.Write("Hangi meyveyi satın almak istersiniz? (Elma/Armut/Çilek/Muz/Diğer): ");
+string ChooseSwitch = Console.ReadLine().ToLower();
+
+switch (ChooseSwitch)
+{
+    case "elma":
+        Console.WriteLine("Seçtiğiniz meyvenin fiyatı: 2 TL");
+        break;
+    case "armut":
+        Console.WriteLine("Seçtiğiniz meyvenin fiyatı: 3 TL");
+        break;
+    case "çilek":
+        Console.WriteLine("Seçtiğiniz meyvenin fiyatı: 2 TL");
+        break;
+    case "muz":
+        Console.WriteLine("Seçtiğiniz meyvenin fiyatı: 3 TL");
+        break;
+    default:
+        Console.WriteLine("Seçtiğiniz meyvenin fiyatı: 4 TL");
+        break;
+}
+
+
+// Küçük bir işlem olduğu için bence if ile yapmak daha basit gibi geliyor (tercihen). Ama genel olarak baktığımızda 2 yapının da kullanımı her zaman projenin seyrine göre belirlenir.
 
 
 
