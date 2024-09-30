@@ -19,13 +19,13 @@ Console.WriteLine("TC Kimlik numarası:");
 IdentityId = Console.ReadLine();
 
 Console.WriteLine("Ad:");
-Name =Console.ReadLine();
+Name = Console.ReadLine();
 
 Console.WriteLine("Soyad:");
-Surname =Console.ReadLine();
+Surname = Console.ReadLine();
 
 Console.WriteLine("Telefon Numarası:");
-MobilPhone =(Console.ReadLine());
+MobilPhone = (Console.ReadLine());
 
 Console.WriteLine("Yas:");
 Age = (Console.ReadLine());
@@ -46,6 +46,62 @@ Console.WriteLine(Total + " toplam harcama karşılığı kazanılan %10 patika 
 
 // Telefon numarası için string tercih ettim çünkü integer 32 bitlik bir sayı türüdür yani belli aralıklar arası değer tutuabilir ayrıca gerçek hayatta da bir çok yerde string türünde tutulur.
 // Ürün fiyatları ve kazançları float olarak tutuyorum. Genelde fiyat float veya decimal olarak tutulur bu yazılımcının tercihine kalmış ben float olarak tutmak istedim.
+
+// Practice If-Else
+
+int Number;
+int Limit = 10;
+string PozitiveMessage = "Girilen sayı çifttir";
+string NegativeMessage = "Girilen sayı tektir.";
+
+Console.WriteLine("Lütfen bir sayı giriniz: ");
+Number = int.Parse(Console.ReadLine());
+
+if(Number > Limit)
+{
+    Console.WriteLine("Girilen sayı 10'dan büyüktür.");
+    if (Number % 2 == 0)
+    {
+        Console.WriteLine(PozitiveMessage);
+    }
+
+    else
+    {
+        Console.WriteLine(NegativeMessage);
+    }
+}
+
+else if (Number == Limit)
+{
+    Console.WriteLine("Girilen sayı eşittir.");
+    if (Number % 2 == 0)
+    {
+        Console.WriteLine(PozitiveMessage);
+    }
+
+    else
+    {
+        Console.WriteLine(NegativeMessage);
+    }
+}
+
+else if (Number < Limit)
+{
+    Console.WriteLine("Girilen sayı 10'dan küçüktür.");
+    if (Number % 2 == 0)
+    {
+        Console.WriteLine(PozitiveMessage);
+    }
+
+    else
+    {
+        Console.WriteLine(NegativeMessage);
+    }
+}
+
+
+
+
 
 
 
