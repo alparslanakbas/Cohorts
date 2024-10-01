@@ -6,19 +6,19 @@ for (int i = 0; i < 10; i++)
     Console.WriteLine("Kendime inanıyorum, ben bu yazılım işini hallederim!");
 }
 
-//// 1/20 arası rakamlar 
+// 1/20 arası rakamlar 
 for (int i = 1; i <= 20; i++)
 {
     Console.WriteLine(i);
 }
 
-//// 1/20 arası çift rakamlar
+// 1/20 arası çift rakamlar
 for (int i = 0; i <= 20; i += 2)
 {
     Console.WriteLine(i);
 }
 
-//// 50-150 arasında ki rakamların toplamı
+// 50-150 arasında ki rakamların toplamı
 int total = 0;
 for (int i = 50; i <= 150; i++)
 {
@@ -26,11 +26,11 @@ for (int i = 50; i <= 150; i++)
 }
 Console.WriteLine("50-150 arasında ki sayıların toplamı: " + total);
 
-//// 1-120 arasında ki tek ve çift rakamların ayrı toplamı
+// 1-120 arasında ki tek ve çift rakamların ayrı toplamı
 int PozitiveTotal = 0;
 int NegativeTotal = 0;
 
-//// negatif için
+// negatif için
 for (int i = 1; i <= 120; i += 2)
 {
     NegativeTotal += i;
@@ -84,7 +84,7 @@ Console.WriteLine($"50-150 arasında ki sayıların toplamı: {total}"); // Bura
                                                                      // yada kullanmak istemiyorsanız + ile string ifadeden çıkıp direk değişkeni buraya getirebilirsiniz.
 
 
-//// 1-120 arasında ki tek ve çift rakamların ayrı toplamı
+// 1-120 arasında ki tek ve çift rakamların ayrı toplamı
 int PozitiveTotal2 = 0;
 int NegativeTotal2 = 0;
 int total3 = 1;
@@ -105,5 +105,30 @@ while (total3 <= 120)
 Console.WriteLine("1-120 arasında ki tek sayıların toplamı: " + NegativeTotal2);
 Console.WriteLine("1-120 arasında ki çift sayıların toplamı: " + PozitiveTotal2);
 
+
+
+// Pratik while vs do-while
+
+var count5 = 1;
+var limit = 15;
+Console.WriteLine("Lütfen sayaç için bir rakam giriniz: ");
+limit = Convert.ToInt16(Console.ReadLine());
+do
+{
+    Console.WriteLine("Ben bir Patika'lıyım");
+    count5++;
+} while (count5 <= limit);
+
+
+var count6 = 1;
+var limit2 = 15;
+
+Console.WriteLine("Lütfen sayaç için bir rakam giriniz: ");
+limit2 = Convert.ToInt16(Console.ReadLine());
+while (count6 <= limit2)
+{
+    Console.WriteLine("Ben bir Patika'lıyım");
+    count6++;
+}
 
 
