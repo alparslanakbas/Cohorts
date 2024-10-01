@@ -1,4 +1,5 @@
 ﻿//** For works **//
+using System.Text;
 
 // 10x Kendime inanıyorum --- I believe myself -_-
 for (int i = 0; i < 10; i++)
@@ -130,5 +131,134 @@ while (count6 <= limit2)
     Console.WriteLine("Ben bir Patika'lıyım");
     count6++;
 }
+
+
+
+// Yol arkadaşı tatil uygulaması
+
+
+
+const string Bodrum = "Bodrum (Paket başlangıç fiyatı 4000 TL)"; // const hiçbir zaman değiştirilmeyen sabit değişken türleridir. Genellikle sql sorgularında servisler de sıklıkla kullanılır.
+const string Marmaris = "Marmaris (Paket başlangıç fiyatı 3000 TL)";
+const string Cesme = "Çeşme (Paket başlangıç fiyatı 5000 TL)";
+const string RoadWay = "1- Kara yolu ( Kişi başı ulaşım tutarı gidiş-dönüş 1500 TL )";
+const string AirWay = "2- Hava yolu ( Kişi başı ulaşım tutarı gidiş-dönüş 4000 TL)";
+
+int total4 = 0;
+float BodrumPrice = 4000f;
+float MarmarisPrice = 3000f;
+float CesmePrice = 5000f;
+float RoadPrice = 1500f;
+float AirPrice = 4000f;
+
+Start:
+Console.WriteLine("Gitmek istediğiniz lokasyonun adını yazınız: \n" +
+    $"{Bodrum} \n" +
+    $"{Marmaris} \n" +
+    $"{Cesme}");
+
+var location = Console.ReadLine();
+
+// if ile kontrol
+if (
+    location is null
+    ||
+    !location.Contains("Bodrum", StringComparison.OrdinalIgnoreCase) // Contains metodu çevirisi anlamıyla verilen değişkenin içerisin de sizin belirttiğiniz değeri arar.
+    &&
+    !location.Contains("Marmaris", StringComparison.OrdinalIgnoreCase) // StringComparison bir enumdur içerisinde ki özelliklere f12 ile bakabilirsiniz. bu özellik her türlü harf duyarlılığını ortadan kaldırır.
+    &&
+    !location.Contains("Çeşme", StringComparison.OrdinalIgnoreCase)
+   ) 
+{
+    Console.WriteLine("Lokasyon adını yanlış yazdınız lütfen tekrar deneyiniz.!");
+    goto Start;
+}
+
+Console.WriteLine(); // boş satır verelim çok yazı karışıklık yaratmasın konsolda
+
+Console.WriteLine($"Gitmek istediğiniz lokasyon {location} olarak belirlenmiştir.. İlgili lokasyonun sistemine yönlendiriliyorsunuz lütfen bekleyiniz...");
+await Task.Delay(3000);  // 3 saniye delay yani süre veriyoruz maksat can sıkıntısı (müşteri hizmetleri yeri gelir 10 dakika bekletir) :D
+
+Console.WriteLine();
+
+Console.WriteLine($"{location} tatili için planınız kaç kişi ?");
+int countPeople =Convert.ToInt16(Console.ReadLine());
+
+Console.WriteLine($"{location} lokasyonu için {countPeople} kişilik yeriniz onaylanmıştır. \n" +
+    "Böylesine müthiş bir coğrafyanın tadını sessiz ve sakin bir ortamda, sevdiklerinizle birlikte çıkarabilirsiniz. \n" +
+    "Gidiş seçeneklerinizi seçeceksiniz lütfen bekleyiniz...");
+await Task.Delay(3000);
+
+Console.WriteLine();
+
+RoadMap:
+Console.WriteLine("2 Seçeneğimiz var bütçesine göre 1 veya 2 seçeneklerini seçiniz: \n" +
+    $"{RoadWay} \n" +
+    $"{AirWay}");
+var WayType = Console.ReadLine();
+
+// while ile kontrol
+while (
+        !WayType!.Contains("1") // Sonuna ünlem koyarak string ifadelerin null olmamasını sağlarsınız eğer ? işareti koyarsanız o değişken null da olabilir demek istemiş olursunuz.
+        &&
+        !WayType.Contains("2")
+      )
+{
+    Console.WriteLine("Seçeneklerimizden birini seçmediniz tekrar deneyiniz!");
+    goto RoadMap;
+}
+
+StringBuilder sb = new StringBuilder(); // String builder genelde c# da dinamik html kodları yazmak için tercih edilir. amacı string ifadeleri birleştirmek.
+
+if(WayType.Contains("1"))
+{
+    WayType = sb.Append("Kara yolu").ToString();
+    total4 = countPeople * Convert.ToInt16(RoadPrice);
+}
+
+else if (WayType.Contains("2"))
+{
+    WayType = sb.Append("Hava yolu").ToString();
+    total4 = countPeople * Convert.ToInt16(AirPrice);
+}
+
+Console.WriteLine();
+if (location.Contains("Bodrum", StringComparison.OrdinalIgnoreCase))
+{
+    total4 += Convert.ToInt16(BodrumPrice) * countPeople; 
+}
+else if (location.Contains("Marmaris", StringComparison.OrdinalIgnoreCase))
+{
+    total4 += Convert.ToInt16(MarmarisPrice) * countPeople;
+}
+else if (location.Contains("Çeşme", StringComparison.OrdinalIgnoreCase))
+{
+    total4 += Convert.ToInt16(CesmePrice) * countPeople;
+}
+
+Console.WriteLine();
+Console.WriteLine($"{location} için {countPeople} kişi {WayType} aracı ile toplam fiyat tutarı : {total4} TL'dir. Ödeme gerçekleşiyor lütfen bekleyiniz...");
+await Task.Delay(3000);
+
+Console.WriteLine();
+
+// do while ile kontorl
+do
+{
+    Console.WriteLine("Başka bir tatil planına ihtiyacınız var ise lütfen 1, çıkmak için lütfen 0 seçeneklerini giriniz: ");
+    var choose = Console.ReadLine();
+
+    if (choose!.Contains("1")) 
+    {
+        goto Start;
+    }
+
+    else
+    {
+        Console.WriteLine("İyi günker");
+        Console.ReadKey();
+    }
+} 
+while (true);
 
 
