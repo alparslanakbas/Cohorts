@@ -1,3 +1,3 @@
 Bu repoda yer alan küçük aplikasyonlar patika dev c# backend bootcamp süresince geliştirilmektedir..
 
-[![image](https://r.resimlink.com/7qvdC4wcLJ.png)](https://resimlink.com/7qvdC4wcLJ)
+![Image](https://i.hizliresim.com/szg53ts.png)
