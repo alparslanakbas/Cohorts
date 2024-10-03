@@ -1,6 +1,8 @@
 ﻿//** For works **//
 using System.Text;
 
+
+
 // 10x Kendime inanıyorum --- I believe myself -_-
 for (int i = 0; i < 10; i++)
 {
@@ -168,7 +170,7 @@ if (
     !location.Contains("Marmaris", StringComparison.OrdinalIgnoreCase) // StringComparison bir enumdur içerisinde ki özelliklere f12 ile bakabilirsiniz. bu özellik her türlü harf duyarlılığını ortadan kaldırır.
     &&
     !location.Contains("Çeşme", StringComparison.OrdinalIgnoreCase)
-   ) 
+   )
 {
     Console.WriteLine("Lokasyon adını yanlış yazdınız lütfen tekrar deneyiniz.!");
     goto Start;
@@ -182,7 +184,7 @@ await Task.Delay(3000);  // 3 saniye delay yani süre veriyoruz maksat can sık�
 Console.WriteLine();
 
 Console.WriteLine($"{location} tatili için planınız kaç kişi ?");
-int countPeople =Convert.ToInt16(Console.ReadLine());
+int countPeople = Convert.ToInt16(Console.ReadLine());
 
 Console.WriteLine($"{location} lokasyonu için {countPeople} kişilik yeriniz onaylanmıştır. \n" +
     "Böylesine müthiş bir coğrafyanın tadını sessiz ve sakin bir ortamda, sevdiklerinizle birlikte çıkarabilirsiniz. \n" +
@@ -210,7 +212,7 @@ while (
 
 StringBuilder sb = new StringBuilder(); // String builder genelde c# da dinamik html kodları yazmak için tercih edilir. amacı string ifadeleri birleştirmek.
 
-if(WayType.Contains("1"))
+if (WayType.Contains("1"))
 {
     WayType = sb.Append("Kara yolu").ToString();
     total4 = countPeople * Convert.ToInt16(RoadPrice);
@@ -225,7 +227,7 @@ else if (WayType.Contains("2"))
 Console.WriteLine();
 if (location.Contains("Bodrum", StringComparison.OrdinalIgnoreCase))
 {
-    total4 += Convert.ToInt16(BodrumPrice) * countPeople; 
+    total4 += Convert.ToInt16(BodrumPrice) * countPeople;
 }
 else if (location.Contains("Marmaris", StringComparison.OrdinalIgnoreCase))
 {
@@ -248,7 +250,7 @@ do
     Console.WriteLine("Başka bir tatil planına ihtiyacınız var ise lütfen 1, çıkmak için lütfen 0 seçeneklerini giriniz: ");
     var choose = Console.ReadLine();
 
-    if (choose!.Contains("1")) 
+    if (choose!.Contains("1"))
     {
         goto Start;
     }
@@ -258,7 +260,41 @@ do
         Console.WriteLine("İyi günker");
         Console.ReadKey();
     }
-} 
+}
 while (true);
+
+
+
+// Useful Functions ////
+
+using Week_2;
+
+HelperFunctions helperFunctions = new HelperFunctions(); // Fonksiyonlarımı tanımlayabileceğim bir yardımcı sınıf oluşturuyorum.
+
+// Müzik sözü
+helperFunctions.SongLyrics();
+
+
+//******//
+
+// Random sayı üret kalanı çift olsun
+helperFunctions.RandomGenerateNumber();
+var number = helperFunctions.RandomGenerateNumber();
+Console.WriteLine($"2 ye bölümünden kalan: {number}");
+
+
+//******//
+
+// değer verip çarpma işlemi yaptır
+var result = helperFunctions.Calculator(10, 5);
+Console.WriteLine($"Sonuç: {result}");
+
+
+//******//
+
+// Welcome Mr ?
+helperFunctions.WelcomeMr("Alparslan", "Akbaş");
+
+
 
 
