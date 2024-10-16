@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Week-4", "Week-4\Week-4.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Week-4-1", "Week-4-1\Week-4-1.csproj", "{F12CC7F0-7D38-48DB-9683-1E32661CBEC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Week-4-2-PaticaLibrary", "Week-4-2-PaticaLibrary\Week-4-2-PaticaLibrary.csproj", "{E92DA944-5C02-42D5-A633-1B9E25A2B992}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Week-4-2-PaticaLibrary", "Week-4-2-PaticaLibrary\Week-4-2-PaticaLibrary.csproj", "{E92DA944-5C02-42D5-A633-1B9E25A2B992}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Week-4-3", "Week-4-3\Week-4-3.csproj", "{92C49DA8-7FC6-430B-9522-ED0B356D2A83}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{E92DA944-5C02-42D5-A633-1B9E25A2B992}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E92DA944-5C02-42D5-A633-1B9E25A2B992}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E92DA944-5C02-42D5-A633-1B9E25A2B992}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92C49DA8-7FC6-430B-9522-ED0B356D2A83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92C49DA8-7FC6-430B-9522-ED0B356D2A83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92C49DA8-7FC6-430B-9522-ED0B356D2A83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92C49DA8-7FC6-430B-9522-ED0B356D2A83}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
