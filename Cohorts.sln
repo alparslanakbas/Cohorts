@@ -17,11 +17,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Week-4-2-PaticaLibrary", "W
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Week-4-3", "Week-4-3\Week-4-3.csproj", "{92C49DA8-7FC6-430B-9522-ED0B356D2A83}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Week-4-4", "Week-4-4\Week-4-4.csproj", "{9E340465-93B6-4013-BD46-BAB5C48213D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Week-4-4", "Week-4-4\Week-4-4.csproj", "{9E340465-93B6-4013-BD46-BAB5C48213D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Week-4-5", "Week-4-5\Week-4-5.csproj", "{04410C0B-2C94-4C87-B8BE-DB058BBD3BCC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Week-4-5", "Week-4-5\Week-4-5.csproj", "{04410C0B-2C94-4C87-B8BE-DB058BBD3BCC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Week-4-6", "Week-4-6\Week-4-6.csproj", "{652F1589-4E13-4652-8191-97C96AF1C650}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Week-4-6", "Week-4-6\Week-4-6.csproj", "{652F1589-4E13-4652-8191-97C96AF1C650}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Week-4-FinalCase", "Week-4-FinalCase\Week-4-FinalCase.csproj", "{145FFE54-3BEA-4566-ABA2-AB8D8BAB4D90}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{652F1589-4E13-4652-8191-97C96AF1C650}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{652F1589-4E13-4652-8191-97C96AF1C650}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{652F1589-4E13-4652-8191-97C96AF1C650}.Release|Any CPU.Build.0 = Release|Any CPU
+		{145FFE54-3BEA-4566-ABA2-AB8D8BAB4D90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{145FFE54-3BEA-4566-ABA2-AB8D8BAB4D90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{145FFE54-3BEA-4566-ABA2-AB8D8BAB4D90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{145FFE54-3BEA-4566-ABA2-AB8D8BAB4D90}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
