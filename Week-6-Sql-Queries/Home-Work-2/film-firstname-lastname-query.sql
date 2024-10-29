@@ -1,5 +1,4 @@
-select * from film 
-where rental_rate in (0.99, 2.99, 4.99)
-	and replacement_cost in (12.99, 15.99, 28.99)
-order by rental_rate asc
-
+SELECT first_name, last_name
+FROM actor
+WHERE first_name IN ('Penelope', 'Nick', 'Ed')
+ORDER BY first_name ASC, last_name ASC;

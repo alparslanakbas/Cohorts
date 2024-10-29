@@ -1,4 +1,5 @@
-select * from film 
-where length <= 50 
-	and rental_rate not in (4.99) 
-order by length asc
+SELECT *
+FROM film
+WHERE length <= 50 
+  AND rental_rate NOT IN (2.99, 4.99)
+ORDER BY length ASC, rental_rate ASC;

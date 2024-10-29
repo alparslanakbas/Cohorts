@@ -1,4 +1,3 @@
-select * from film 
-where length <= 50 
-	and rental_rate not in (4.99) 
-order by length asc
+SELECT last_name
+FROM customer
+WHERE first_name = 'Mary';

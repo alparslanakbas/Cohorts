@@ -1,2 +1,3 @@
-Select * from film where length > 60 and length < 75
-order by length asc
+SELECT title, description
+FROM film
+ORDER BY title ASC;

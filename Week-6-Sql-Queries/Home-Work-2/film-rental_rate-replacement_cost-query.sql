@@ -1,5 +1,5 @@
-select * from film 
-where rental_rate in (0.99, 2.99, 4.99)
-	and replacement_cost in (12.99, 15.99, 28.99)
-order by rental_rate asc
-
+SELECT *
+FROM film
+WHERE rental_rate IN (0.99, 2.99, 4.99)
+  AND replacement_cost IN (12.99, 15.99, 28.99)
+ORDER BY rental_rate ASC, replacement_cost ASC;
