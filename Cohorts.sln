@@ -35,7 +35,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Week-5-ImdbApp", "Week-5-Im
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Week-5-Try-Catch", "Week-5-Try-Catch\Week-5-Try-Catch.csproj", "{C26F9A57-8F7D-417C-A723-BB0C3CBB772E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Week-5-FinalApp", "Week-5-FinalApp\Week-5-FinalApp.csproj", "{656F690C-BED6-4400-8267-1B32FD96EF93}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Week-5-FinalApp", "Week-5-FinalApp\Week-5-FinalApp.csproj", "{656F690C-BED6-4400-8267-1B32FD96EF93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Week-7-Practice.Linq", "Week-7-Practice.Linq\Week-7-Practice.Linq.csproj", "{411E55ED-497D-4A4B-85DA-6BE4A3A86BF2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -111,6 +113,10 @@ Global
 		{656F690C-BED6-4400-8267-1B32FD96EF93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{656F690C-BED6-4400-8267-1B32FD96EF93}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{656F690C-BED6-4400-8267-1B32FD96EF93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{411E55ED-497D-4A4B-85DA-6BE4A3A86BF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{411E55ED-497D-4A4B-85DA-6BE4A3A86BF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{411E55ED-497D-4A4B-85DA-6BE4A3A86BF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{411E55ED-497D-4A4B-85DA-6BE4A3A86BF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
