@@ -49,6 +49,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Week-7-Practice.GroupJoin",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Week-8-Net-Core.Empty", "Week-8-Net-Core.Empty\Week-8-Net-Core.Empty.csproj", "{D58A3900-C4FD-4F2B-9DB6-DAB8D6E41701}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Week-8-2-Net-Core-Mvc.App", "Week-8-2-Net-Core-Mvc.App\Week-8-2-Net-Core-Mvc.App.csproj", "{77A87A41-35E7-4FA8-B32C-2F58C2D85456}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -147,6 +149,10 @@ Global
 		{D58A3900-C4FD-4F2B-9DB6-DAB8D6E41701}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D58A3900-C4FD-4F2B-9DB6-DAB8D6E41701}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D58A3900-C4FD-4F2B-9DB6-DAB8D6E41701}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77A87A41-35E7-4FA8-B32C-2F58C2D85456}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77A87A41-35E7-4FA8-B32C-2F58C2D85456}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77A87A41-35E7-4FA8-B32C-2F58C2D85456}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77A87A41-35E7-4FA8-B32C-2F58C2D85456}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

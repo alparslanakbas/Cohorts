@@ -1,0 +1,59 @@
+﻿@model CustomerOrderDto
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Müşteri ve Ürünlerin Listesi</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Id</th>
+            <th scope="col">FirstName</th>
+            <th scope="col">LastName</th>
+            <th scope="col">Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>@Model.Customer.Id</td>
+            <td>@Model.Customer.FirstName</td>
+            <td>@Model.Customer.LastName</td>
+            <td>@Model.Customer.Email</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Id</th>
+            <th scope="col">ProductName</th>
+            <th scope="col">Price</th>
+            <th scope="col">Quantity</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if(Model.Orders is not null)
+        {
+            var index = 1;
+            @foreach (var order in Model.Orders)
+            {
+                <tr>
+                    <th scope="row">@index</th>
+                    <td>@order.Id</td>
+                    <td>@order.ProductName</td>
+                    <td>@order.Price</td>
+                    <td>@order.Quantity</td>
+                </tr>
+                index++;
+            }
+        }
+        
+    </tbody>
+</table>
