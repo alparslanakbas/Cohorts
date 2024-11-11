@@ -45,7 +45,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Week-7-Patikaflix.App", "We
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Week-7-Practice.Join", "Week-7-Practice.Join\Week-7-Practice.Join.csproj", "{63D65D0D-8A55-45F4-804C-3FA60F7F4076}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Week-7-Practice.GroupJoin", "Week-7-Practice.GroupJoin\Week-7-Practice.GroupJoin.csproj", "{C36713EE-ABF8-4AAE-A24D-A6F507B17B6F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Week-7-Practice.GroupJoin", "Week-7-Practice.GroupJoin\Week-7-Practice.GroupJoin.csproj", "{C36713EE-ABF8-4AAE-A24D-A6F507B17B6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Week-8-Net-Core.Empty", "Week-8-Net-Core.Empty\Week-8-Net-Core.Empty.csproj", "{D58A3900-C4FD-4F2B-9DB6-DAB8D6E41701}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -141,6 +143,10 @@ Global
 		{C36713EE-ABF8-4AAE-A24D-A6F507B17B6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C36713EE-ABF8-4AAE-A24D-A6F507B17B6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C36713EE-ABF8-4AAE-A24D-A6F507B17B6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D58A3900-C4FD-4F2B-9DB6-DAB8D6E41701}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D58A3900-C4FD-4F2B-9DB6-DAB8D6E41701}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D58A3900-C4FD-4F2B-9DB6-DAB8D6E41701}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D58A3900-C4FD-4F2B-9DB6-DAB8D6E41701}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
