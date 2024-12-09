@@ -1,0 +1,56 @@
+[
+  {
+    "id": "cc2da739-7557-48f5-98a6-d2b00be274ee",
+    "firstName": "Acun",
+    "lastName": "Ilıcalı",
+    "categoryName": "Ünlüler"
+  },
+  {
+    "id": "1e19d1a9-24cb-44ab-880c-8ebb9218ba20",
+    "firstName": "Ahmet",
+    "lastName": "Yılmaz",
+    "categoryName": "Gönüllüler"
+  },
+  {
+    "id": "0ebc7fbd-ca19-4ade-a409-88734539c87d",
+    "firstName": "Aleyna",
+    "lastName": "Avcı",
+    "categoryName": "Ünlüler"
+  },
+  {
+    "id": "ace30d0b-b05c-4160-ac9b-070c00ae6fb5",
+    "firstName": "Cem",
+    "lastName": "Öztürk",
+    "categoryName": "Gönüllüler"
+  },
+  {
+    "id": "892e1469-da78-41f5-a59c-70bdff2f73ba",
+    "firstName": "Elif",
+    "lastName": "Demirtaş",
+    "categoryName": "Gönüllüler"
+  },
+  {
+    "id": "d588f5e1-e5c0-4d5b-baf2-8c74becc9edf",
+    "firstName": "Hadise",
+    "lastName": "Açıkgöz",
+    "categoryName": "Ünlüler"
+  },
+  {
+    "id": "28e845ba-20c3-4cf9-b5f4-757058a4e406",
+    "firstName": "Kıvanç",
+    "lastName": "Tatlıtuğ",
+    "categoryName": "Ünlüler"
+  },
+  {
+    "id": "d02a5145-5bba-41e5-8f7e-3c8e182f7b3c",
+    "firstName": "Özge",
+    "lastName": "Açık",
+    "categoryName": "Ünlüler"
+  },
+  {
+    "id": "c1eb6f97-4103-483b-8462-39bf4bc89256",
+    "firstName": "Sertan",
+    "lastName": "Bozkuş",
+    "categoryName": "Ünlüler"
+  }
+]

@@ -1,0 +1,6 @@
+@Week_12_Survivor.API_HostAddress = http://localhost:5022
+
+GET {{Week_12_Survivor.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
